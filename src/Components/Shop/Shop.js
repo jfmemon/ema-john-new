@@ -2,19 +2,16 @@ import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import './Shop.css';
+import { useLoaderData } from 'react-router-dom';
 const Shop = () => {
-    const [products, setProducts] = useState([]);
+    const products = useLoaderData();
     const [cart, setCart] = useState([]);
-    useEffect(() => {
-        fetch('products.json')
-        .then(response => response.json())
-        .then(data => setProducts(data))
-    },[]);
 
     const handlerAddToCart = (product) => {
         const newCart = [...cart, product];
         setCart(newCart);
     }
+    
     return (
         <div className='shop'>
             <div className="product-container">
