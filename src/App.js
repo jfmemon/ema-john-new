@@ -3,6 +3,7 @@ import About from './Components/About/About';
 import Inventory from './Components/Inventory/Inventory';
 import Orders from './Components/Orders/Orders';
 import Shop from './Components/Shop/Shop';
+import { productsAndCartLoader } from './Loader/productsAndCartLoader';
 import Main from './layouts/Main';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -22,9 +23,7 @@ function App() {
 
         {
           path: "/orders",
-          loader: () => {
-            return fetch('products.json')
-          },
+          loader: productsAndCartLoader,
           element: <Orders></Orders>
         },
 
@@ -32,7 +31,7 @@ function App() {
           path: "/inventory",
           element: <Inventory></Inventory>
         },
-        
+
         {
           path: "/about",
           element: <About></About>

@@ -1,10 +1,10 @@
-.shop{
+.shop-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
     padding: 2px;
 }
 
-.product-container{
+.products-container{
     padding: 59px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

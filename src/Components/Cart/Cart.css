@@ -2,3 +2,11 @@
     position: sticky;
     top: 80px;
 }
+
+.btn-clear-cart {
+    width: 100%;
+    background-color: #FF3030;
+    padding: 8px 0;
+    border: 0;
+    color: white;
+}
