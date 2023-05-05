@@ -15,7 +15,7 @@ export const productsAndCartLoader = async () => {
             const quantity = savedCart[id];
             addedProduct.quantity = quantity;
             initialCart.push(addedProduct);
-        }   
+        }
     }
 
     return { products: products, initialCart: initialCart };
