@@ -5,7 +5,7 @@
     background: #FFFFFF;
     border: 1px solid #95A0A7;
     border-radius: 8px;
-    padding: 32px;
+    padding-left: 40px;
 }
 
 .form-title {
@@ -19,8 +19,7 @@
 }
 
 .form-control {
-    width: 415px;
-    height: 84px;
+    margin-bottom: 20px;
 }
 
 .form-control label {
@@ -51,4 +50,15 @@
     height: 55px;
     background: rgba(255, 153, 0, 0.3);
     border-radius: 5px;
+    padding: 0 10px;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+    color: #0E161A;
+    border: none;
+}
+
+.btn-submit:hover{
+    background-color: cornflowerblue;
 }

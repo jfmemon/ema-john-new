@@ -1,4 +1,4 @@
-.header-navigation{
+.header-navigation {
     background-color: #1C2B35;
     height: 80px;
     display: flex;
@@ -8,7 +8,7 @@
     padding-right: 70px;
 }
 
-.header-navigation a{
+.header-navigation a {
     color: white;
     text-decoration: none;
     margin-left: 40px;
@@ -16,6 +16,13 @@
     transition: 0.1s linear;
 }
 
-.header-navigation a:hover{
+.header-navigation a:hover {
     color: orange;
+}
+
+.btn-logOut {
+    margin-left: 30px;
+    padding: 10px;
+    background-color: coral;
+    color: white;
 }
